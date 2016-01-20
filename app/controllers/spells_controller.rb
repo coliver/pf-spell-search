@@ -64,7 +64,7 @@ class SpellsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_spell
-      @spell = Spell.where('lower(name) = ?', params[:id].downcase).first
+      @spell = Spell.where('lower(name) = ?', params[:id].downcase).first!
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

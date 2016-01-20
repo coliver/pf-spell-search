@@ -6,7 +6,7 @@
 # server 'example.com', user: 'deploy', roles: %w{app db web}, my_property: :my_value
 # server 'example.com', user: 'deploy', roles: %w{app web}, other_property: :other_value
 # server 'db.example.com', user: 'deploy', roles: %w{db}
-server '54.84.11.124', user: 'ec2-user', roles: %w{app db web}
+server '54.84.11.124', user: 'deploy', roles: %w{app db web}
 
 
 # role-based syntax
@@ -61,7 +61,7 @@ server '54.84.11.124', user: 'ec2-user', roles: %w{app db web}
 #   }
 
 set :ssh_options, {
-  keys: %w(/home/coliver/.ssh/huboxpair.pem'),
-  forward_agent: false#,
-  #auth_methods: %w(password)
+  keys: %w(/home/coliver/.ssh/id_rsa'),
+  forward_agent: true,
+  auth_methods: %w(publickey)
 }

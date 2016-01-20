@@ -35,6 +35,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  gem 'awesome_print'
 end
 
 group :development do
@@ -45,6 +46,8 @@ group :development do
   gem 'spring'
 
   gem "capistrano", "~> 3.4"
+  gem 'capistrano-rvm'
   gem 'capistrano-rails', '~> 1.1'
+  gem 'capistrano-bundler', '~> 1.1.2'
 end
 
