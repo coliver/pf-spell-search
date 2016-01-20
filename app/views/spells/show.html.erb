@@ -1,3 +1,7 @@
+<% if @spell.nil? %>
+<p>Spell not found.</p>
+<% else %>
+
 <p id="notice"><%= notice %></p>
 
 <p>
@@ -427,3 +431,4 @@
 
 <%= link_to 'Edit', edit_spell_path(@spell) %> |
 <%= link_to 'Back', spells_path %>
+<% end %>
