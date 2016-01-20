@@ -1,0 +1,357 @@
+<%= form_for(@spell) do |f| %>
+  <% if @spell.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@spell.errors.count, "error") %> prohibited this spell from being saved:</h2>
+
+      <ul>
+      <% @spell.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :school %><br>
+    <%= f.text_field :school %>
+  </div>
+  <div class="field">
+    <%= f.label :subschool %><br>
+    <%= f.text_field :subschool %>
+  </div>
+  <div class="field">
+    <%= f.label :descriptor %><br>
+    <%= f.text_field :descriptor %>
+  </div>
+  <div class="field">
+    <%= f.label :spell_level %><br>
+    <%= f.text_field :spell_level %>
+  </div>
+  <div class="field">
+    <%= f.label :casting_time %><br>
+    <%= f.text_field :casting_time %>
+  </div>
+  <div class="field">
+    <%= f.label :components %><br>
+    <%= f.text_field :components %>
+  </div>
+  <div class="field">
+    <%= f.label :costly_components %><br>
+    <%= f.check_box :costly_components %>
+  </div>
+  <div class="field">
+    <%= f.label :range %><br>
+    <%= f.text_field :range %>
+  </div>
+  <div class="field">
+    <%= f.label :area %><br>
+    <%= f.text_field :area %>
+  </div>
+  <div class="field">
+    <%= f.label :effect %><br>
+    <%= f.text_field :effect %>
+  </div>
+  <div class="field">
+    <%= f.label :targets %><br>
+    <%= f.text_field :targets %>
+  </div>
+  <div class="field">
+    <%= f.label :duration %><br>
+    <%= f.text_field :duration %>
+  </div>
+  <div class="field">
+    <%= f.label :dismissible %><br>
+    <%= f.check_box :dismissible %>
+  </div>
+  <div class="field">
+    <%= f.label :shapeable %><br>
+    <%= f.check_box :shapeable %>
+  </div>
+  <div class="field">
+    <%= f.label :saving_throw %><br>
+    <%= f.text_field :saving_throw %>
+  </div>
+  <div class="field">
+    <%= f.label :spell_resistence %><br>
+    <%= f.text_field :spell_resistence %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :description_formated %><br>
+    <%= f.text_field :description_formated %>
+  </div>
+  <div class="field">
+    <%= f.label :source %><br>
+    <%= f.text_field :source %>
+  </div>
+  <div class="field">
+    <%= f.label :full_text %><br>
+    <%= f.text_field :full_text %>
+  </div>
+  <div class="field">
+    <%= f.label :verbal %><br>
+    <%= f.check_box :verbal %>
+  </div>
+  <div class="field">
+    <%= f.label :somatic %><br>
+    <%= f.check_box :somatic %>
+  </div>
+  <div class="field">
+    <%= f.label :material %><br>
+    <%= f.check_box :material %>
+  </div>
+  <div class="field">
+    <%= f.label :focus %><br>
+    <%= f.check_box :focus %>
+  </div>
+  <div class="field">
+    <%= f.label :divine_focus %><br>
+    <%= f.check_box :divine_focus %>
+  </div>
+  <div class="field">
+    <%= f.label :sor %><br>
+    <%= f.text_field :sor %>
+  </div>
+  <div class="field">
+    <%= f.label :wiz %><br>
+    <%= f.text_field :wiz %>
+  </div>
+  <div class="field">
+    <%= f.label :cleric %><br>
+    <%= f.text_field :cleric %>
+  </div>
+  <div class="field">
+    <%= f.label :druid %><br>
+    <%= f.text_field :druid %>
+  </div>
+  <div class="field">
+    <%= f.label :ranger %><br>
+    <%= f.text_field :ranger %>
+  </div>
+  <div class="field">
+    <%= f.label :bard %><br>
+    <%= f.text_field :bard %>
+  </div>
+  <div class="field">
+    <%= f.label :paladin %><br>
+    <%= f.text_field :paladin %>
+  </div>
+  <div class="field">
+    <%= f.label :alchemist %><br>
+    <%= f.text_field :alchemist %>
+  </div>
+  <div class="field">
+    <%= f.label :summoner %><br>
+    <%= f.text_field :summoner %>
+  </div>
+  <div class="field">
+    <%= f.label :witch %><br>
+    <%= f.text_field :witch %>
+  </div>
+  <div class="field">
+    <%= f.label :inquisitor %><br>
+    <%= f.text_field :inquisitor %>
+  </div>
+  <div class="field">
+    <%= f.label :oracle %><br>
+    <%= f.text_field :oracle %>
+  </div>
+  <div class="field">
+    <%= f.label :antipaladin %><br>
+    <%= f.text_field :antipaladin %>
+  </div>
+  <div class="field">
+    <%= f.label :magus %><br>
+    <%= f.text_field :magus %>
+  </div>
+  <div class="field">
+    <%= f.label :adept %><br>
+    <%= f.text_field :adept %>
+  </div>
+  <div class="field">
+    <%= f.label :deity %><br>
+    <%= f.text_field :deity %>
+  </div>
+  <div class="field">
+    <%= f.label :SLA_Level %><br>
+    <%= f.text_field :SLA_Level %>
+  </div>
+  <div class="field">
+    <%= f.label :domain %><br>
+    <%= f.text_field :domain %>
+  </div>
+  <div class="field">
+    <%= f.label :short_description %><br>
+    <%= f.text_field :short_description %>
+  </div>
+  <div class="field">
+    <%= f.label :acid %><br>
+    <%= f.check_box :acid %>
+  </div>
+  <div class="field">
+    <%= f.label :air %><br>
+    <%= f.check_box :air %>
+  </div>
+  <div class="field">
+    <%= f.label :chaotic %><br>
+    <%= f.check_box :chaotic %>
+  </div>
+  <div class="field">
+    <%= f.label :cold %><br>
+    <%= f.check_box :cold %>
+  </div>
+  <div class="field">
+    <%= f.label :curse %><br>
+    <%= f.check_box :curse %>
+  </div>
+  <div class="field">
+    <%= f.label :darkness %><br>
+    <%= f.check_box :darkness %>
+  </div>
+  <div class="field">
+    <%= f.label :death %><br>
+    <%= f.check_box :death %>
+  </div>
+  <div class="field">
+    <%= f.label :disease %><br>
+    <%= f.check_box :disease %>
+  </div>
+  <div class="field">
+    <%= f.label :earth %><br>
+    <%= f.check_box :earth %>
+  </div>
+  <div class="field">
+    <%= f.label :electricity %><br>
+    <%= f.check_box :electricity %>
+  </div>
+  <div class="field">
+    <%= f.label :emotion %><br>
+    <%= f.check_box :emotion %>
+  </div>
+  <div class="field">
+    <%= f.label :evil %><br>
+    <%= f.check_box :evil %>
+  </div>
+  <div class="field">
+    <%= f.label :fear %><br>
+    <%= f.check_box :fear %>
+  </div>
+  <div class="field">
+    <%= f.label :fire %><br>
+    <%= f.check_box :fire %>
+  </div>
+  <div class="field">
+    <%= f.label :force %><br>
+    <%= f.check_box :force %>
+  </div>
+  <div class="field">
+    <%= f.label :good %><br>
+    <%= f.check_box :good %>
+  </div>
+  <div class="field">
+    <%= f.label :language_dependent %><br>
+    <%= f.check_box :language_dependent %>
+  </div>
+  <div class="field">
+    <%= f.label :lawful %><br>
+    <%= f.check_box :lawful %>
+  </div>
+  <div class="field">
+    <%= f.label :light %><br>
+    <%= f.check_box :light %>
+  </div>
+  <div class="field">
+    <%= f.label :mind_affecting %><br>
+    <%= f.check_box :mind_affecting %>
+  </div>
+  <div class="field">
+    <%= f.label :pain %><br>
+    <%= f.check_box :pain %>
+  </div>
+  <div class="field">
+    <%= f.label :poison %><br>
+    <%= f.check_box :poison %>
+  </div>
+  <div class="field">
+    <%= f.label :shadow %><br>
+    <%= f.check_box :shadow %>
+  </div>
+  <div class="field">
+    <%= f.label :sonic %><br>
+    <%= f.check_box :sonic %>
+  </div>
+  <div class="field">
+    <%= f.label :water %><br>
+    <%= f.check_box :water %>
+  </div>
+  <div class="field">
+    <%= f.label :linktext %><br>
+    <%= f.text_field :linktext %>
+  </div>
+  <div class="field">
+    <%= f.label :material_costs %><br>
+    <%= f.text_field :material_costs %>
+  </div>
+  <div class="field">
+    <%= f.label :bloodline %><br>
+    <%= f.text_field :bloodline %>
+  </div>
+  <div class="field">
+    <%= f.label :patron %><br>
+    <%= f.text_field :patron %>
+  </div>
+  <div class="field">
+    <%= f.label :mythic_text %><br>
+    <%= f.text_field :mythic_text %>
+  </div>
+  <div class="field">
+    <%= f.label :augmented %><br>
+    <%= f.text_field :augmented %>
+  </div>
+  <div class="field">
+    <%= f.label :mythic %><br>
+    <%= f.check_box :mythic %>
+  </div>
+  <div class="field">
+    <%= f.label :bloodrager %><br>
+    <%= f.text_field :bloodrager %>
+  </div>
+  <div class="field">
+    <%= f.label :shaman %><br>
+    <%= f.text_field :shaman %>
+  </div>
+  <div class="field">
+    <%= f.label :psychic %><br>
+    <%= f.text_field :psychic %>
+  </div>
+  <div class="field">
+    <%= f.label :medium %><br>
+    <%= f.text_field :medium %>
+  </div>
+  <div class="field">
+    <%= f.label :mesmerist %><br>
+    <%= f.text_field :mesmerist %>
+  </div>
+  <div class="field">
+    <%= f.label :occultist %><br>
+    <%= f.text_field :occultist %>
+  </div>
+  <div class="field">
+    <%= f.label :spiritualist %><br>
+    <%= f.text_field :spiritualist %>
+  </div>
+  <div class="field">
+    <%= f.label :skald %><br>
+    <%= f.text_field :skald %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,195 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Spells</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>School</th>
+      <th>Subschool</th>
+      <th>Descriptor</th>
+      <th>Spell level</th>
+      <th>Casting time</th>
+      <th>Components</th>
+      <th>Costly components</th>
+      <th>Range</th>
+      <th>Area</th>
+      <th>Effect</th>
+      <th>Targets</th>
+      <th>Duration</th>
+      <th>Dismissible</th>
+      <th>Shapeable</th>
+      <th>Saving throw</th>
+      <th>Spell resistence</th>
+      <th>Description</th>
+      <th>Description formated</th>
+      <th>Source</th>
+      <th>Full text</th>
+      <th>Verbal</th>
+      <th>Somatic</th>
+      <th>Material</th>
+      <th>Focus</th>
+      <th>Divine focus</th>
+      <th>Sor</th>
+      <th>Wiz</th>
+      <th>Cleric</th>
+      <th>Druid</th>
+      <th>Ranger</th>
+      <th>Bard</th>
+      <th>Paladin</th>
+      <th>Alchemist</th>
+      <th>Summoner</th>
+      <th>Witch</th>
+      <th>Inquisitor</th>
+      <th>Oracle</th>
+      <th>Antipaladin</th>
+      <th>Magus</th>
+      <th>Adept</th>
+      <th>Deity</th>
+      <th>Sla level</th>
+      <th>Domain</th>
+      <th>Short description</th>
+      <th>Acid</th>
+      <th>Air</th>
+      <th>Chaotic</th>
+      <th>Cold</th>
+      <th>Curse</th>
+      <th>Darkness</th>
+      <th>Death</th>
+      <th>Disease</th>
+      <th>Earth</th>
+      <th>Electricity</th>
+      <th>Emotion</th>
+      <th>Evil</th>
+      <th>Fear</th>
+      <th>Fire</th>
+      <th>Force</th>
+      <th>Good</th>
+      <th>Language dependent</th>
+      <th>Lawful</th>
+      <th>Light</th>
+      <th>Mind affecting</th>
+      <th>Pain</th>
+      <th>Poison</th>
+      <th>Shadow</th>
+      <th>Sonic</th>
+      <th>Water</th>
+      <th>Linktext</th>
+      <th>Material costs</th>
+      <th>Bloodline</th>
+      <th>Patron</th>
+      <th>Mythic text</th>
+      <th>Augmented</th>
+      <th>Mythic</th>
+      <th>Bloodrager</th>
+      <th>Shaman</th>
+      <th>Psychic</th>
+      <th>Medium</th>
+      <th>Mesmerist</th>
+      <th>Occultist</th>
+      <th>Spiritualist</th>
+      <th>Skald</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @spells.each do |spell| %>
+      <tr>
+        <td><%= spell.name %></td>
+        <td><%= spell.school %></td>
+        <td><%= spell.subschool %></td>
+        <td><%= spell.descriptor %></td>
+        <td><%= spell.spell_level %></td>
+        <td><%= spell.casting_time %></td>
+        <td><%= spell.components %></td>
+        <td><%= spell.costly_components %></td>
+        <td><%= spell.range %></td>
+        <td><%= spell.area %></td>
+        <td><%= spell.effect %></td>
+        <td><%= spell.targets %></td>
+        <td><%= spell.duration %></td>
+        <td><%= spell.dismissible %></td>
+        <td><%= spell.shapeable %></td>
+        <td><%= spell.saving_throw %></td>
+        <td><%= spell.spell_resistence %></td>
+        <td><%= spell.description %></td>
+        <td><%= spell.description_formated %></td>
+        <td><%= spell.source %></td>
+        <td><%= spell.full_text %></td>
+        <td><%= spell.verbal %></td>
+        <td><%= spell.somatic %></td>
+        <td><%= spell.material %></td>
+        <td><%= spell.focus %></td>
+        <td><%= spell.divine_focus %></td>
+        <td><%= spell.sor %></td>
+        <td><%= spell.wiz %></td>
+        <td><%= spell.cleric %></td>
+        <td><%= spell.druid %></td>
+        <td><%= spell.ranger %></td>
+        <td><%= spell.bard %></td>
+        <td><%= spell.paladin %></td>
+        <td><%= spell.alchemist %></td>
+        <td><%= spell.summoner %></td>
+        <td><%= spell.witch %></td>
+        <td><%= spell.inquisitor %></td>
+        <td><%= spell.oracle %></td>
+        <td><%= spell.antipaladin %></td>
+        <td><%= spell.magus %></td>
+        <td><%= spell.adept %></td>
+        <td><%= spell.deity %></td>
+        <td><%= spell.SLA_Level %></td>
+        <td><%= spell.domain %></td>
+        <td><%= spell.short_description %></td>
+        <td><%= spell.acid %></td>
+        <td><%= spell.air %></td>
+        <td><%= spell.chaotic %></td>
+        <td><%= spell.cold %></td>
+        <td><%= spell.curse %></td>
+        <td><%= spell.darkness %></td>
+        <td><%= spell.death %></td>
+        <td><%= spell.disease %></td>
+        <td><%= spell.earth %></td>
+        <td><%= spell.electricity %></td>
+        <td><%= spell.emotion %></td>
+        <td><%= spell.evil %></td>
+        <td><%= spell.fear %></td>
+        <td><%= spell.fire %></td>
+        <td><%= spell.force %></td>
+        <td><%= spell.good %></td>
+        <td><%= spell.language_dependent %></td>
+        <td><%= spell.lawful %></td>
+        <td><%= spell.light %></td>
+        <td><%= spell.mind_affecting %></td>
+        <td><%= spell.pain %></td>
+        <td><%= spell.poison %></td>
+        <td><%= spell.shadow %></td>
+        <td><%= spell.sonic %></td>
+        <td><%= spell.water %></td>
+        <td><%= spell.linktext %></td>
+        <td><%= spell.material_costs %></td>
+        <td><%= spell.bloodline %></td>
+        <td><%= spell.patron %></td>
+        <td><%= spell.mythic_text %></td>
+        <td><%= spell.augmented %></td>
+        <td><%= spell.mythic %></td>
+        <td><%= spell.bloodrager %></td>
+        <td><%= spell.shaman %></td>
+        <td><%= spell.psychic %></td>
+        <td><%= spell.medium %></td>
+        <td><%= spell.mesmerist %></td>
+        <td><%= spell.occultist %></td>
+        <td><%= spell.spiritualist %></td>
+        <td><%= spell.skald %></td>
+        <td><%= link_to 'Show', spell %></td>
+        <td><%= link_to 'Edit', edit_spell_path(spell) %></td>
+        <td><%= link_to 'Destroy', spell, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Spell', new_spell_path %>
