@@ -1,0 +1,109 @@
+<%= form_for(@feat) do |f| %>
+  <% if @feat.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@feat.errors.count, "error") %> prohibited this feat from being saved:</h2>
+
+      <ul>
+      <% @feat.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :type %><br>
+    <%= f.text_field :type %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :prerequisites %><br>
+    <%= f.text_field :prerequisites %>
+  </div>
+  <div class="field">
+    <%= f.label :prerequisite_feats %><br>
+    <%= f.text_field :prerequisite_feats %>
+  </div>
+  <div class="field">
+    <%= f.label :benefit %><br>
+    <%= f.text_field :benefit %>
+  </div>
+  <div class="field">
+    <%= f.label :normal %><br>
+    <%= f.text_field :normal %>
+  </div>
+  <div class="field">
+    <%= f.label :special %><br>
+    <%= f.text_field :special %>
+  </div>
+  <div class="field">
+    <%= f.label :source %><br>
+    <%= f.text_field :source %>
+  </div>
+  <div class="field">
+    <%= f.label :fulltext %><br>
+    <%= f.text_field :fulltext %>
+  </div>
+  <div class="field">
+    <%= f.label :teamwork %><br>
+    <%= f.check_box :teamwork %>
+  </div>
+  <div class="field">
+    <%= f.label :critical %><br>
+    <%= f.check_box :critical %>
+  </div>
+  <div class="field">
+    <%= f.label :grit %><br>
+    <%= f.check_box :grit %>
+  </div>
+  <div class="field">
+    <%= f.label :style %><br>
+    <%= f.check_box :style %>
+  </div>
+  <div class="field">
+    <%= f.label :performance %><br>
+    <%= f.check_box :performance %>
+  </div>
+  <div class="field">
+    <%= f.label :racial %><br>
+    <%= f.check_box :racial %>
+  </div>
+  <div class="field">
+    <%= f.label :companion_familiar %><br>
+    <%= f.check_box :companion_familiar %>
+  </div>
+  <div class="field">
+    <%= f.label :race_name %><br>
+    <%= f.text_field :race_name %>
+  </div>
+  <div class="field">
+    <%= f.label :note %><br>
+    <%= f.text_field :note %>
+  </div>
+  <div class="field">
+    <%= f.label :goal %><br>
+    <%= f.text_field :goal %>
+  </div>
+  <div class="field">
+    <%= f.label :completion_benefit %><br>
+    <%= f.text_field :completion_benefit %>
+  </div>
+  <div class="field">
+    <%= f.label :multiples %><br>
+    <%= f.check_box :multiples %>
+  </div>
+  <div class="field">
+    <%= f.label :suggested_traits %><br>
+    <%= f.text_field :suggested_traits %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

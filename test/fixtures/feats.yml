@@ -1,0 +1,51 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  type: 
+  description: MyString
+  prerequisites: MyString
+  prerequisite_feats: MyString
+  benefit: MyString
+  normal: MyString
+  special: MyString
+  source: MyString
+  fulltext: MyString
+  teamwork: false
+  critical: false
+  grit: false
+  style: false
+  performance: false
+  racial: false
+  companion_familiar: false
+  race_name: MyString
+  note: MyString
+  goal: MyString
+  completion_benefit: MyString
+  multiples: false
+  suggested_traits: MyString
+
+two:
+  name: MyString
+  type: 
+  description: MyString
+  prerequisites: MyString
+  prerequisite_feats: MyString
+  benefit: MyString
+  normal: MyString
+  special: MyString
+  source: MyString
+  fulltext: MyString
+  teamwork: false
+  critical: false
+  grit: false
+  style: false
+  performance: false
+  racial: false
+  companion_familiar: false
+  race_name: MyString
+  note: MyString
+  goal: MyString
+  completion_benefit: MyString
+  multiples: false
+  suggested_traits: MyString

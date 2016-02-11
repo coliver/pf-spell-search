@@ -1,0 +1,71 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Feats</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Prerequisites</th>
+      <th>Prerequisite feats</th>
+      <th>Benefit</th>
+      <th>Normal</th>
+      <th>Special</th>
+      <th>Source</th>
+      <th>Fulltext</th>
+      <th>Teamwork</th>
+      <th>Critical</th>
+      <th>Grit</th>
+      <th>Style</th>
+      <th>Performance</th>
+      <th>Racial</th>
+      <th>Companion familiar</th>
+      <th>Race name</th>
+      <th>Note</th>
+      <th>Goal</th>
+      <th>Completion benefit</th>
+      <th>Multiples</th>
+      <th>Suggested traits</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @feats.each do |feat| %>
+      <tr>
+        <td><%= feat.name %></td>
+        <td><%= feat.type %></td>
+        <td><%= feat.description %></td>
+        <td><%= feat.prerequisites %></td>
+        <td><%= feat.prerequisite_feats %></td>
+        <td><%= feat.benefit %></td>
+        <td><%= feat.normal %></td>
+        <td><%= feat.special %></td>
+        <td><%= feat.source %></td>
+        <td><%= feat.fulltext %></td>
+        <td><%= feat.teamwork %></td>
+        <td><%= feat.critical %></td>
+        <td><%= feat.grit %></td>
+        <td><%= feat.style %></td>
+        <td><%= feat.performance %></td>
+        <td><%= feat.racial %></td>
+        <td><%= feat.companion_familiar %></td>
+        <td><%= feat.race_name %></td>
+        <td><%= feat.note %></td>
+        <td><%= feat.goal %></td>
+        <td><%= feat.completion_benefit %></td>
+        <td><%= feat.multiples %></td>
+        <td><%= feat.suggested_traits %></td>
+        <td><%= link_to 'Show', feat %></td>
+        <td><%= link_to 'Edit', edit_feat_path(feat) %></td>
+        <td><%= link_to 'Destroy', feat, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Feat', new_feat_path %>

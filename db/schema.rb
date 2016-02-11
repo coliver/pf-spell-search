@@ -11,7 +11,35 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160120142133) do
+ActiveRecord::Schema.define(version: 20160211203430) do
+
+  create_table "feats", force: :cascade do |t|
+    t.string   "name"
+    t.string   "type"
+    t.string   "description"
+    t.string   "prerequisites"
+    t.string   "prerequisite_feats"
+    t.string   "benefit"
+    t.string   "normal"
+    t.string   "special"
+    t.string   "source"
+    t.string   "fulltext"
+    t.boolean  "teamwork"
+    t.boolean  "critical"
+    t.boolean  "grit"
+    t.boolean  "style"
+    t.boolean  "performance"
+    t.boolean  "racial"
+    t.boolean  "companion_familiar"
+    t.string   "race_name"
+    t.string   "note"
+    t.string   "goal"
+    t.string   "completion_benefit"
+    t.boolean  "multiples"
+    t.string   "suggested_traits"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+  end
 
   create_table "spells", force: :cascade do |t|
     t.string   "name"
